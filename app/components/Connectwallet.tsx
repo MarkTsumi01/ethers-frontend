@@ -1,8 +1,10 @@
 "use client";
 import { useWallet } from "../store/Wallet";
+import { useTheme } from "next-themes";
 
 export function Connectwallet() {
-  const { getBalance } = useWallet(); 
+  const { getBalance } = useWallet();
+  const { theme, setTheme } = useTheme();
 
   return (
     <>
